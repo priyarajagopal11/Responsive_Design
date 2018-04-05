@@ -1,0 +1,655 @@
+.active1{
+  color: red;
+}
+/*img{
+  max-width: 100%;
+}*/
+.container{
+}
+  /*section-1*/
+  .perth{
+    clear: both;
+    height:510px;
+    background-color: #61C1E8;
+    color:white;
+  }
+    .navbar{
+      background-color: #61C1E8;
+      z-index:30;
+    }
+        .affix {
+          width: 84.6%;
+          /*height: 12%;*/
+          top: 0;
+        }
+      .brand{
+        float:left;
+      }
+        .brand img{
+          box-shadow: 10px 10px 3px #21B2E7;
+        }
+      .nav{
+        margin-top: 10px;
+      }
+        .nav a{
+          color:white;
+        }
+        .nav a:hover{
+          color:black;
+        }
+        ul.topnav li.icon {  
+          display: none;
+        }
+    .head{
+      padding-top: 10px;
+      margin-bottom: 30px;
+    }
+      .head h1{
+        padding-left: 270px;
+      }
+      .head p{
+        font-size: 1.5em;
+      }
+        .span-free{
+          font-style: italic;
+          font-weight: bold;
+        }
+    .button{
+      width:160px;
+      height:50px;
+    }
+      .download{
+        border:1px solid white;
+        background-color: #61C1E8;
+        margin-left: 270px;
+      }
+      .button i{
+        padding-left: 10px;
+      }
+  /*section-2*/
+  .longwind{
+    background-color: #F4F4F4;
+    height:650px;
+    padding-top: 150px;
+  }
+    .list-select{
+      width:5px;
+      height:40px;
+      background-color: #61C1E8;
+      float:left;
+      margin-right: 10px;
+    }
+    .longwind p{
+      color:#959595;
+    }
+    /*button*/
+      .say-hello{
+        margin-top: 40px;
+        border:1px solid #0CB190;
+        color:#0CB190;
+      }
+    .pic2 {
+      margin-left: 25px;
+    }
+  /*section-3*/
+  .get{
+    background-color: #FFFFFF;
+    height:520px;
+    padding-top: 100px;
+  }
+    .get-img{
+      padding-top: 150px;
+    }
+    .para1{
+      color:#959595;
+    }
+   /* button*/
+      .view-on{
+        width:200px;
+        margin-top: 40px;
+        border:1px solid #EB4B8A;
+        color:#EB4B8A;
+        background-color: #FFFFFF;
+      }
+  /*section-4*/
+  .like{
+    height:300px;
+    background-color: #0BC4B0;
+    color:white;
+    text-align: center;
+  }
+    .like h2{
+      padding-top: 100px;
+      padding-bottom: 20px;
+    }
+    .buy{
+      width:200px;
+      border:1px solid #FFFFFF;
+      color:#FFFFFF;
+      background-color: #0BC4B0;
+    }
+  /*section-5*/
+  .social-icons{
+    height:600px;
+    background-color: #F4F4F4;
+    text-align: center;
+    margin-top: -10px;
+  }
+    .social-icons ul
+    {
+      list-style-type: none;
+      text-align: center;
+    }
+    .icons{
+      margin-left:360px;
+    }
+      .icon-circle
+      {
+        float: left;
+        width:50px;
+        height: 50px;
+        color:black;
+        background-color: #fff;
+        border:2px solid #333;
+        border-radius: 50px;
+        padding:15px 18px;
+        margin: 200px 15px 50px;
+      }
+    .news{
+      clear:both;
+      font-style: italic;
+    }
+      .news input{
+        margin-left: 50px;
+        border:none;
+        padding:0px 10px;
+        width:200px;
+        height:50px;
+        border-radius: 10px;
+        color:#EAEAEA;
+        font-weight: bold;
+      }
+      .news i{
+        margin-left: -30px;
+        color:#6EC6EB;
+      }
+  /*footer*/
+  .footer{
+    height:100px;
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+    .footer p{
+      padding-top: 30px;
+      float: left;
+      margin:0px 300px 0px 400px;
+    }
+      .span-footer-perth{
+        color:#6EC6EB;
+      }
+      .span-footer-pixels{
+        font-style: italic;
+      }
+    .up-icon{
+      height:40px;
+      width: 40px;
+      border:none;
+      border-radius: 10px;
+      background-color: #F4F4F4;
+      padding:10px;
+      margin-top: 20px;
+    }
+
+/*For right-slide menu*/
+#page {
+  position: relative; 
+  z-index: 20; 
+  /*transform: translate3d( -10px, 0, 0 ); 
+  -webkit-transform: translate3d( -10px, 0, 0 );*/
+}
+#toggle-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333;
+}
+#menu {
+  display: none;
+  position: fixed;
+/*  top: 0;*/
+  right: 0;
+  width: 270px;
+  padding: 15px 25px;
+  list-style: none;
+  background: #F4F4F4;
+  z-index: 10; 
+  height: 100%;
+}
+#menu a {
+  display: block;
+  padding: 15px 0;
+  color: #333;
+}
+.animating #menu, .menu-visible #menu {
+  display: block;
+}
+.animating #page {
+  transition: transform .25s ease-in-out;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+}
+.animating.left #page {
+  transform: translate3d( -240px, 0, 0 );
+  -webkit-transform: translate3d( -240px, 0, 0 );
+}
+.animating.right #page {
+  transform: translate3d( 240px, 0, 0 );
+  -webkit-transform: translate3d( 240px, 0, 0 );
+}
+.menu-visible #page {
+  right: 250px;
+}
+  /*Laptop/desktop*/  
+  @media screen and (min-width : 787px) and (max-width: 1024px) and (orientation: landscape){
+    img{
+      max-width: 100%;
+    }
+    /*section-1*/
+    .perth{
+      padding-right: 50px;
+    }
+      .nav {
+        margin-right: -120px;
+        margin-left: -90px;
+        width: 80%;
+      }
+      .affix {
+        width: 91.8%;
+        /* height: 12%; */
+      }
+      .head{
+        margin-bottom: 30px;
+      }
+        .head h1{
+          padding-left: 260px;
+        }
+    /*section-2*/
+    .longwind{
+      height:423px;
+      padding-top: 100px;
+    }
+      .list-select {
+        height: 60px;
+      }
+      .pic2 {
+        margin-left: 78px;
+        padding-right: 0px;
+      }
+    /*section-3*/
+    .get{
+      height:358px;
+      padding: 30px;
+    }
+    /*section-4*/
+    .like{
+      height:200px;
+    }
+      .like h2{
+        font-size: 25px;
+        padding: 30px 0px;
+      }
+    /*section-5*/
+    .social-icons{
+      height:300px;
+      text-align: center;
+    }
+      .social-icons ul
+      {
+        text-align: center;
+      }
+      .icons{
+        margin-left:300px;
+      }
+        .icon-circle
+        {
+          margin: 70px 10px ;
+        }
+    /*footer*/
+    .footer{
+      height:50px;
+      text-align: center;
+    }
+      .footer p{
+        padding: 20px 0px 0px 320px;
+        margin: 0px;
+      }
+      .up-icon{
+        margin: 10px 0px 0px 250px;
+      }
+  }
+  /*ipad/tab*/
+  @media screen and (min-width : 426px) and (max-width: 786px) and (orientation: portrait){ 
+    img{
+      max-width: 100%;
+    }
+    /*section-1*/
+    .perth{
+      height:600px;
+      text-align: center;
+      margin-top: -10px;
+    }
+      .affix {
+        width: 93.8%;
+        /*height: 8%;*/
+      }
+      ul.topnav li.hid {
+        display: none;
+      }
+      ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+      }
+      .head{
+        padding-top: 80px;
+      }
+        .head h1{
+          padding-left: 0px;
+        }
+      .download{
+        margin: 20px 0px 0px;
+      }
+    /*section-2*/
+    .longwind{
+      height:670px;
+      padding: 30px;
+      text-align: center;
+    }
+      .list-select{
+        margin-top: 10px;
+      }
+      .longwind p{
+        padding-top: 10px;
+        text-align: left;
+      }
+      .pic2 {
+        max-width: 40%;
+        margin: 20px 0px 0px 200px;
+      }
+    /*section-3*/
+    .get{
+      height:550px;
+      padding: 30px;
+      text-align: center;
+    }
+      .get-para{
+        margin-top: -450px;
+      }
+      .get p{
+        text-align: left;
+      }
+     /* button*/
+        .view-on{
+          margin-top: 320px;
+        }
+    /*section-5*/
+    .social-icons{
+      height:250px;
+      text-align: center;
+    }
+      .social-icons ul
+      {
+        text-align: center;
+      }
+      .icons{
+        margin-left:180px;
+      }
+        .icon-circle
+        {
+          margin: 50px 10px ;
+        }
+    /*footer*/
+    .footer{
+      height:50px;
+      text-align: center;
+    }
+      .footer p{
+        padding: 20px 0px 0px 200px;
+        margin: 0px;
+      }
+      .up-icon{
+        margin: 10px 0px 0px 150px;
+      }
+  }
+  /*mobile/small*/
+  @media screen and (max-width: 425px){ 
+    img{
+      max-width: 100%;
+    }
+    /*section-1*/
+    .perth{
+      height:630px;
+      text-align: center;
+      padding:0px 20px;
+      margin-top: -10px;
+    }
+      #toggle-menu{
+        top: 5px;
+     /*   right: -20px;*/
+      }
+      .affix {
+        width: 90.6%;
+        /*height: 16%;*/
+        margin-left: -20px;
+      }
+      ul.topnav li.hid {
+        display: none;
+      }
+      ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+      }
+      .head{
+        padding-top: 10px;
+      }
+        .head h1{
+          padding-left: 0px;
+        }
+      .download{
+        margin: 20px 0px 0px;
+      }
+    /*section-2*/
+    .longwind{
+      height:810px;
+      padding: 20px;
+      text-align: center;
+    }
+      .list-select{
+        height:120px;
+        margin-top: 10px;
+      }
+      .longwind p{
+        padding-top: 10px;
+        text-align: left;
+      }
+      /*button*/
+      .say-hello{
+        margin-top: 20px;
+      }
+      .pic2 {
+        margin: 20px 0px 0px ;
+      }
+    /*section-3*/
+    .get{
+      height:450px;
+      padding: 20px;
+      text-align: center;
+    }
+      .get p{
+        text-align: left;
+      }
+      .get-img{
+        display: none;
+      }
+     /* button*/
+        .view-on{
+          margin-top: 20px;
+        }
+    /*section-4*/
+    .like{
+      height:150px;
+    }
+      .like h2{
+        font-size: 25px;
+        padding: 20px 0px;
+      }
+    /*section-5*/
+    .social-icons{
+      height:400px;
+      text-align: left;
+      padding:20px;
+    }
+      .icons{
+        margin-left:60px;
+      }
+        .icon-circle
+        {
+          clear:both;
+          margin:0px 0px 20px 0px;
+        }
+    /*footer*/
+    .footer{
+      height:50px;
+      text-align: left;
+      padding-bottom: 20px;
+    }
+      .footer p{
+        clear: both;
+        font-size: 12px;
+        margin: 0px 0px 0px 10px;
+      }
+      .up-icon{
+        height:30px;
+        width: 30px;
+        padding:5px;
+        border-radius: 5px;
+        text-align: center;
+        margin: 5px 0px 0px 125px;
+      }
+  }
+
+    @media screen and (max-width: 600px) and (orientation: landscape){ 
+    img{
+      max-width: 100%;
+    }
+    /*section-1*/
+    .perth{
+      height:550px;
+      text-align: center;
+      padding:0px 20px;
+      margin-top: -10px;
+    }
+      #toggle-menu{
+        top: 5px;
+      /*  right: -20px;*/
+      }
+      .affix {
+        width: 94.6%;
+        /*height: 16%;*/
+        margin-left: -20px;
+      }
+      ul.topnav li.hid {
+        display: none;
+      }
+      ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+      }
+      .head{
+        padding-top: 10px;
+      }
+        .head h1{
+          padding-left: 0px;
+        }
+      .download{
+        margin: 20px 0px 0px;
+      }
+    /*section-2*/
+    .longwind{
+      height:763px;
+      padding: 20px;
+      text-align: center;
+    }
+      .list-select{
+        height:60px;
+        margin-top: 10px;
+      }
+      .longwind p{
+        padding-top: 10px;
+        text-align: left;
+      }
+      /*button*/
+      .say-hello{
+        margin-top: 20px;
+      }
+      .pic2 {
+        max-width: 70%;
+        margin: 20px 0px 0px 70px;
+      }
+    /*section-3*/
+    .get{
+      height:300px;
+      padding: 20px;
+      text-align: center;
+    }
+      .get p{
+        text-align: left;
+      }
+      .get-img{
+        display: none;
+      }
+     /* button*/
+        .view-on{
+          margin-top: 20px;
+        }
+    /*section-4*/
+    .like{
+      height:150px;
+    }
+      .like h2{
+        font-size: 25px;
+        padding: 20px 0px;
+      }
+    /*section-5*/
+    .social-icons{
+      height:250px;
+      text-align: center;
+    }
+      .social-icons ul
+      {
+        text-align: center;
+      }
+      .icons{
+        margin-left:80px;
+      }
+        .icon-circle
+        {
+          margin: 50px 10px ;
+        }
+    /*footer*/
+    .footer{
+      height:50px;
+      text-align: left;
+    }
+      .footer p{
+        padding:10px;
+        font-size: 12px;
+        margin: 0px;
+      }
+      .up-icon{
+        height:30px;
+        width: 30px;
+        padding:6px;
+        border-radius: 5px;
+        text-align: center;
+        margin: 5px 0px 0px 180px;
+      }
+  }
